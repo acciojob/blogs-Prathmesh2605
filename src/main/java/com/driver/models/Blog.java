@@ -28,11 +28,12 @@ public class Blog {
     @OneToMany(mappedBy = "blog", cascade = CascadeType.ALL)
     private List<Image> imageList;
 
-    public Blog(int id, String title, String content, Date pubDate) {
+    public Blog(int id, String title, String content, Date pubDate, List<Image> imageList) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.pubDate = pubDate;
+        this.imageList = imageList;
     }
 
     public User getUser() {

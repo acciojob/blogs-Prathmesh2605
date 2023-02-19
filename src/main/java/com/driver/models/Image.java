@@ -14,10 +14,22 @@ public class Image {
 
     private String dimensions;
 
+    @ManyToOne
+    @JoinColumn
+    private Blog blog;
+
     public Image(int id, String description, String dimensions) {
         this.id = id;
         this.description = description;
         this.dimensions = dimensions;
+    }
+
+    public Blog getBlog() {
+        return blog;
+    }
+
+    public void setBlog(Blog blog) {
+        this.blog = blog;
     }
 
     public Image() {

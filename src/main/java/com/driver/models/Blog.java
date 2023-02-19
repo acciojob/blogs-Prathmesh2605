@@ -36,6 +36,10 @@ public class Blog {
         this.imageList = imageList;
     }
 
+    public Blog(User user, String title, String content) {
+
+    }
+
     public User getUser() {
         return user;
     }

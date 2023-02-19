@@ -24,6 +24,9 @@ public class Image {
         this.dimensions = dimensions;
     }
 
+    public Image(Blog blog, String description, String dimensions) {
+    }
+
     public Blog getBlog() {
         return blog;
     }

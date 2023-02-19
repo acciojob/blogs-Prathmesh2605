@@ -37,7 +37,9 @@ public class Blog {
     }
 
     public Blog(User user, String title, String content) {
-
+        this.title = title;
+        this.content = content;
+        this.user = user;
     }
 
     public User getUser() {

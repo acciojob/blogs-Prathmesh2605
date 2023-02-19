@@ -29,14 +29,14 @@ public class BlogService {
 
         blog.setPubDate(new Date());
 
-        user.getBlogList().add(blog);
         userRepository1.save(user);
+        user.getBlogList().add(blog);
         return blog;
     }
 
     public void deleteBlog(int blogId){
         //delete blog and corresponding images
-            userRepository1.deleteById(blogId);
+            blogRepository1.deleteById(blogId);
 
     }
 }
